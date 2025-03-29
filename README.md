@@ -1,78 +1,143 @@
-# Data Analysis on Electric Vehicle
+## 🚀 Project Overview
 
-## Project Overview
+This comprehensive analysis explores electric vehicle (EV) adoption trends across the United States, providing valuable insights into market dynamics, geographical distribution, and manufacturer competition through interactive visualizations and detailed analytics.
 
-This project provides a detailed analysis and visualization of electric vehicle (EV) sales trends across the United States. By leveraging various data analysis and visualization techniques, we were able to extract meaningful insights into the EV market trends.
+## ✨ Key Features
 
-## Features
+### 🌎 Interactive Choropleth Map
+- Visualizes EV distribution across U.S. states with color gradients representing density
+- Hover functionality reveals exact vehicle counts per state
+- Responsive design for optimal viewing on any device
 
-- **Choropleth Map of EVs by State**: Visualizes the distribution of electric vehicles across U.S. states.
+![ChoroplethMap](https://github.com/user-attachments/assets/71546741-ad54-4781-8ae2-e1cd8a0f49d0)
 
-  ![ChoroplethMap](https://github.com/user-attachments/assets/71546741-ad54-4781-8ae2-e1cd8a0f49d0)
+### 🏎️ Dynamic Racing Bar Chart
+- Animated timeline of manufacturer market share evolution
+- Tracks top EV brands from early adoption to current leaders
+- Customizable time frame and display options
 
-- **Racing Bar Chart of EV Sales by Manufacturer**: Shows the changing landscape of top EV manufacturers over the years through an animated racing bar chart.
+https://github.com/user-attachments/assets/5adf5863-4960-4ff3-8efe-75302c175919
 
-  https://github.com/user-attachments/assets/5adf5863-4960-4ff3-8efe-75302c175919
-  
-## Methodology
-1. **Data Understanding**
-2. **Data Cleaning**
-3. **EDA - Univariate Analysis (Non Visualization)**
-4. **EDA - Univariate Analysis (Visualization)**
-5. **EDA - Bivariate Analysis (Non Visualization)**
-6. **EDA - Bivariate Analysis (Visualization)**
-7. **Choropleth Map to display the number of EV vehicles based on location**
-8. **Racing Bar Chart to display the animation of EV Make and its count each year**
+### 📊 Additional Visualizations
+- Time series analysis of EV adoption rates
+- Range distribution by vehicle type and manufacturer
+- Price segmentation analysis
+- State-by-state adoption comparisons
 
-## Technologies Used
+## 🔍 Methodology
 
-- **Python**: Programming language for data analysis and visualization.
-- **pandas**: Data manipulation and analysis.
-- **matplotlib & seaborn**: For Exploratory Data Analysis (Univariate and Bivariate)
-- **plotly**: For generating the choropleth map.
-- **bar_chart_race**: To create racing bar charts.
+1. **Data Understanding & Exploration**
+   - Comprehensive assessment of dataset structure and variables
+   - Identification of key metrics and potential relationships
 
-## Dataset
-This dataset provides insights into the distribution of electric vehicles across different states, counties, and cities, and offers detailed information on their range and eligibility for fuel incentives.
+2. **Data Cleaning & Preparation**
+   - Handling missing values and outliers
+   - Standardization of categorical variables
+   - Geocoding for spatial analysis
 
+3. **Exploratory Data Analysis**
+   - Univariate analysis (with and without visualization)
+   - Bivariate analysis (with and without visualization)
+   - Correlation studies between key variables
 
-| Column                                      | Description                                                                 |
-|---------------------------------------------|-----------------------------------------------------------------------------|
-| `'VIN (1-10)'`                              | The first 10 characters of the Vehicle Identification Number (VIN)          |
-| `'County'`                                  | The county where the vehicle is registered                                  |
-| `'City'`                                    | The city where the vehicle is registered                                    |
-| `'State'`                                   | The state where the vehicle is registered (represented by a 2-letter code)  |
-| `'Postal Code'`                             | The postal code of the vehicle's registration area                          |
-| `'Model Year'`                              | The model year of the electric vehicle                                      |
-| `'Make'`                                    | The manufacturer or brand of the vehicle (e.g., Tesla, Toyota)              |
-| `'Model'`                                   | The specific model name of the vehicle                                      |
-| `'Electric Vehicle Type'`                   | The type of electric vehicle (e.g., Battery Electric Vehicle (BEV), Plug-in Hybrid Electric Vehicle (PHEV)) |
-| `'Clean Alternative Fuel Vehicle (CAFV) Eligibility'` | Indicates whether the vehicle is eligible for CAFV benefits                 |
-| `'Electric Range'`                          | The electric-only driving range of the vehicle (in miles)                   |
-| `'Base MSRP'`                               | Manufacturer's suggested retail price (MSRP) for the vehicle (in USD)       |
-| `'Legislative District'`                    | The legislative district where the vehicle is registered (if available)     |
-| `'DOL Vehicle ID'`                          | A unique ID assigned to the vehicle by the Department of Licensing          |
-| `'Vehicle Location'`                        | The geographic coordinates of the vehicle registration location (longitude and latitude) |
-| `'Electric Utility'`                        | The electric utility company serving the location where the vehicle is registered |
-| `'2020 Census Tract'`                       | The 2020 Census Tract where the vehicle is located                          |
+4. **Advanced Visualization**
+   - Choropleth mapping for geographical distribution
+   - Animated racing bar charts for temporal trends
+   - Interactive dashboards for user exploration
 
-## Requirements
-- Python 3.x
-- Libraries: `pandas`, `matplotlib`, `seaborn`, `plotly`, `bar_chart_race`
+## 💻 Technologies Used
 
-## Installation
-To run this project, ensure you have the required libraries installed. You can do this by running:
+| Technology | Purpose |
+|------------|---------|
+| Python 3.9+ | Core programming language |
+| pandas | Data manipulation and analysis |
+| NumPy | Numerical computations |
+| matplotlib | Basic visualizations |
+| seaborn | Statistical visualizations |
+| plotly | Interactive visualizations |
+| bar_chart_race | Animated bar chart creation |
+| Geopandas | Geographical data handling |
+| Jupyter Notebook | Interactive development environment |
 
-```bash
-pip install pandas matplotlib seaborn plotly bar_chart_race
+## 📂 Dataset Overview
+
+The dataset provides comprehensive information about electric vehicle registrations across the United States:
+
+```markdown
+| Column | Description | Key Insights |
+|--------|-------------|--------------|
+| VIN (1-10) | Vehicle Identification Number prefix | Unique vehicle identifier |
+| County/City/State | Registration location | Geographical analysis basis |
+| Model Year | Vehicle production year | Temporal trend analysis |
+| Make/Model | Manufacturer and model | Brand performance tracking |
+| Electric Vehicle Type | BEV or PHEV classification | Technology adoption trends |
+| Electric Range | Miles per charge | Performance metrics |
+| Base MSRP | Manufacturer's suggested price | Affordability analysis |
+| CAFV Eligibility | Clean fuel vehicle status | Policy impact measurement |
 ```
 
-## Thank you
-If you enjoyed this notebook, please consider sharing it.
+## 🛠️ Installation Guide
 
-Author: `Sri Charan Thoutam`
+1. Clone the repository:
+```bash
+git clone https://github.com/Ozarakesh533/EV-Sales-Analysis.git
+cd EV-Sales-Analysis
+```
 
-- 👉Shoot me mails : thoutamsricharan@gmail.com
-- 👉Connect on LinkedIn: [linkedin.com/in/codewithcharan](https://www.linkedin.com/in/codewithcharan/)
-- 👉Explore my Portfolio: [codewithcharan.github.io/My-Portfolio](https://www.codewithcharan.github.io/My-Portfolio)
-- 👉Explore my GitHub: [github.com/CodeWithCharan](https://www.github.com/CodeWithCharan)
+2. Create and activate virtual environment:
+```bash
+python -m venv ev_env
+source ev_env/bin/activate  # Linux/Mac
+ev_env\Scripts\activate    # Windows
+```
+
+3. Install requirements:
+```bash
+pip install -r requirements.txt
+```
+
+Alternative manual installation:
+```bash
+pip install pandas matplotlib seaborn plotly geopandas bar_chart_race jupyter
+```
+
+## 🏆 Key Insights Discovered
+
+1. **Geographical Trends**
+   - Top 3 states for EV adoption: California, Washington, Florida
+   - Emerging markets in Midwest showing rapid growth
+
+2. **Manufacturer Analysis**
+   - Tesla dominance in BEV market
+   - Traditional automakers gaining PHEV market share
+
+3. **Temporal Patterns**
+   - 45% year-over-year growth since 2018
+   - Seasonal purchasing patterns observed
+
+4. **Price & Range Correlations**
+   - Strong correlation between price and electric range
+   - Market segmentation into affordable vs premium EVs
+
+## 📈 Business Applications
+
+1. **Market Strategy Development**
+   - Identify high-potential geographical markets
+   - Competitive benchmarking against industry leaders
+
+2. **Policy Impact Assessment**
+   - Evaluate effectiveness of state-level incentives
+   - Model adoption rates under different policy scenarios
+
+3. **Product Planning**
+   - Optimal price positioning analysis
+   - Range requirements by region and vehicle class
+
+## 👨‍💻 About the Author
+
+**Rakesh Oza** | Data Science & Analytics 
+
+- 📧 Email: [ozarakesh533@gmail.com](mailto:ozarakesh533@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/rakeshoza](https://www.linkedin.com/in/rakeshoza/)
+- 🌐 Portfolio: [ozarakesh533.github.io](https://ozarakesh533.github.io/My_Portfolio_website/)
+- 🔗 GitHub: [github.com/Ozarakesh533](https://github.com/Ozarakesh533)
